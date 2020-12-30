@@ -8,10 +8,10 @@ let personalMovieDB = {
     "actors": {},
     "genres": [],
     "privat": false,
-    toggleVisibleMyDB: function(){
-        personalMovieDB.privat=!personalMovieDB.privat;
+    toggleVisibleMyDB: function () {
+        personalMovieDB.privat = !personalMovieDB.privat;
     },
-    start: function() {
+    start: function () {
         let x = false;
         while (!x) {
             x = true;
@@ -27,7 +27,7 @@ let personalMovieDB = {
             }
         }
     },
-    rememberMyFilms: function (){
+    rememberMyFilms: function () {
         for (let i = 0; i < numberOfFilms; i++) {
             let a = prompt("Один из последних просмотренных фильмов?");
             personalMovieDB.movies[a] = prompt(`На сколько оцените ${a}?`);
@@ -60,7 +60,7 @@ let personalMovieDB = {
                 personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
             }
         }
-        personalMovieDB.genres.forEach(function(item,i,arr){
+        personalMovieDB.genres.forEach(function (item, i, arr) {
             console.log(`Любимый жанр №${i + 1}: - это  ${item}`);
         });
     }

@@ -23,7 +23,8 @@ const elems = {
     "adv": document.querySelector('.promo__adv'),
     "genre": document.querySelector('.promo__genre'),
     "bg": document.querySelector('.promo__bg'),
-    "films": document.querySelectorAll('.promo__interactive-item')
+    "films": document.querySelectorAll('.promo__interactive-item'),
+    "deleteMovie":document.querySelectorAll('.delete')
 }
 elems.adv.remove();
 
